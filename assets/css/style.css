@@ -23,6 +23,7 @@ html{
     src: url("/assets/font/Roboto Slab Regular.ttf");
 }
 /* ========Header======= */
+
 header{
     display: inline-flex;
     justify-content: space-between;
@@ -31,6 +32,15 @@ header{
     left: 0;
     top: 0;
     width: 100%;
+}
+.toggle{
+    display: none;
+    background: #3b3a3a;
+    color: #FFFFFF;
+    text-align: right;
+    padding: 7px;
+    font-size: 22px;
+    cursor: pointer;
 }
 .logo{
     display: inline-flex;
@@ -58,15 +68,15 @@ header{
 .menu-nav-ul li a:hover{
     color: white;
     background-color:#53c077;
+    transition: all 0.3s;
 }
 /* ============Main=========== */
 main{
-    width: auto;
-    height: auto;
+    margin: auto;
 }
 .slideshow-container{
     position: relative;
-    margin: auto;
+    
 }
 .mySlides {
     display: none;
@@ -112,7 +122,6 @@ main{
     font-style: normal;
     font-weight: normal;
     font-size: 20px;
-    line-height: 19px;
     color: white;
 }
 .text .button-banner:hover{
@@ -123,7 +132,7 @@ main{
     cursor: pointer;
     position: absolute;
     top: 50%;
-    width: auto;
+
     margin: -50px 120px 0px 120px;
     padding: auto;
     text-align: center;
@@ -138,12 +147,10 @@ main{
     border-radius: 50%;
     user-select: none;
 }
-  /* Position the "next button" to the right */
 .next {
     right: 0;
     border-radius: 50%;
 }
-  /* On hover, add a black background color with a little bit see-through */
 .prev:hover, .next:hover {
     background-color: rgba(0,0,0,0.8);
 }
@@ -153,6 +160,7 @@ main{
 .nav-dot{
     text-align: center;
     margin-bottom: 50px;
+    margin-left: 40px;
 }
 
 .dot {
@@ -234,8 +242,6 @@ main{
     text-decoration: none;
     justify-content: center;
     padding: 10px 30px;
-    width: 180px;
-    height: 50px;
     border: 3px solid #FFFFFF;
     box-sizing: border-box;
     border-radius: 5px;
@@ -314,11 +320,11 @@ main{
 .text-blog-3 .button-layout-right:hover{
     background: gray;
 }
-/* ========New,Blog======== */
-.page-wrapper{
-    margin: 20px 170px 0px 165px;
+/* ====================New===================== */
+.new-container{
+    margin: 20px 170px 100px 165px;
 }
-.post-slider .h1-page{
+.new-container .h1-new{
     width: 400px;
     height: 75px;
     font-style: normal;
@@ -345,7 +351,7 @@ main{
     background: rgba(196, 196, 196, 0.48);
     user-select: none;
 } 
-.prev-new {
+.next-new {
     right: 0;
     border-radius: 50%;
 } 
@@ -356,25 +362,21 @@ main{
 .prev-new:hover, .next-new:hover{
     background: #21E67B;
 }
-.post-slider .post-wrapper{
+.image{
+    height: 360px;
+    margin-bottom:20px ;
+}
+.image img{
     width: 100%;
-    height:42rem;
-    margin: auto;
-    overflow: hidden;
+    height: auto;
+    object-fit: cover;
 }
-.post-slider .post-wrapper .post{
-    margin: -10px 10px 0px 25.5px;
-    padding: 0px -15px;
-    display: inline-block;
-    background: none;
-}
-
 .text-new{
     margin-top: 35px;
 }
 .text-new .h2-new{
     width: 370px;
-    height: 86px;
+    height: 60px;
     font-family: Bauhaus Medium;
     font-style: normal;
     font-weight: normal;
@@ -390,6 +392,9 @@ main{
     font-weight: 300;
     font-size: 16px;
     line-height: 17px;
+}
+.slick-initialized .slick-slide{
+    margin: 0 13px;
 } 
 .slick-dots{
     list-style: none;
@@ -415,7 +420,10 @@ main{
     background: #21E67B;
 }
 /* ========================blog==================== */
-.blog-slider .h1-blog{
+.blog-container{
+    margin: 20px 170px 100px 165px;
+}
+.blog-container .h1-blog{
     width: 400px;
     height: 75px;
     font-style: normal;
@@ -424,17 +432,83 @@ main{
     line-height: 58px;
     color: #000000;
 }
-.blog-slider .blog-wrapper{
-    width: 100%;
-    height:40rem;
-    margin: auto;
-    overflow: hidden;
+.prev-new, .next-new{
+    position: absolute;
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    line-height: 58px;
+    margin-top:-70px;
+    margin-right:10.50pc;
+    margin-left: 67pc;
+    color: white;
+    font-weight: bold;
+    font-size: 30px;
+    transition: 0.6s ease;
+    border-radius: 50%;
+    background: rgba(196, 196, 196, 0.48);
+    user-select: none;
+} 
+.prev-blog, .next-blog{
+    position: absolute;
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    line-height: 58px;
+    margin-top:-70px;
+    margin-right:10.50pc;
+    margin-left: 67pc;
+    color: white;
+    font-weight: bold;
+    font-size: 30px;
+    transition: 0.6s ease;
+    border-radius: 50%;
+    background: rgba(196, 196, 196, 0.48);
+    user-select: none;
+} 
+.next-blog {
+    right: 0;
+    border-radius: 50%;
+} 
+ 
+.prev-blog:hover, .next-blog:hover {
+    background-color: rgba(0,0,0,0.8);
 }
-.blog-slider .blog-wrapper .post{
-    margin: -10px 10px 0px 25.5px;
-    padding: 0px -15px;
-    display: inline-block;
-    background: none;
+.prev-blog:hover, .next-blog:hover{
+    background: #21E67B;
+}
+.blog-image{
+    height: 360px;
+    margin-bottom:20px ;
+}
+.blog-image img{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+.text-blog{
+    margin-top: 35px;
+}
+.text-blog .h2-blog{
+    width: 370px;
+    height: 60px;
+    font-family: Bauhaus Medium;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 30px;
+    line-height: 28px;
+    color: #61A952;
+}
+.text-blog .p-content-blog{
+    width: 365px;
+    height: 60px;
+    font-family: Bauhaus Light Regular;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 17px;
 }
 /* ==============================Footer========================== */
 hr{
@@ -465,6 +539,8 @@ hr{
     margin-left: 42.5pc;
 }
 .logo-web img{
+    width: 100%;
+    height: auto;
     margin: 70px 0 -15px 0;
 }
 .menu-footer-nav-ul{
@@ -504,7 +580,6 @@ hr{
 }
 .p1{
     font-family:Roboto Slab Regular;
-   /*  margin-right: 52px; */
     padding-left: 35px;
     padding-bottom: 7px;
     font-size: 12px;
