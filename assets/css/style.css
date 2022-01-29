@@ -198,23 +198,28 @@ main{
 
 /* =============Blog============== */
 .Post-layout{
-    position: relative;
-    margin:0px 70px 0px 160px;
+    margin: 0px 0px 0px 180px ;
     display: grid;
-    grid-template-columns: 1.5fr 1.5fr;
-    grid-template-rows: 400px 150px 350px;
+    grid-gap:35px;
+    grid-template-columns: 3fr 2fr 1.4fr;
+    grid-template-rows: 400px 250px 200px;
 }
-.layout-item-left img{
-    width: 600px;
-    height: auto;
-    margin-bottom: 43px;
+.item3 {
+    grid-column: 2 / span 2;
+    grid-row: 1 / span 2;
 }
 .blog-01{
+    position: relative;
+}
+.blog-01 img{
     width: 100%;
     height: auto;
 }
 .blog-02{
     position: relative;
+}
+.blog-02 img{
+    
     width: 100%;
     height: auto;
 }
@@ -264,12 +269,10 @@ main{
 .text-blog-2 .button-layout-left:hover{
     background: gray;
 }
-.layout-item-right {
-    width: 600px;
-    height: auto;
-}
 .blog-03{
     position: relative;
+}
+.blog-03{
     width: 100%;
     height: auto;
 }
