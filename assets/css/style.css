@@ -4,23 +4,23 @@
     box-sizing: border-box;
 }
 html{
-    font-family:HLT-bauserif;
+    font-family:HLT bauserif;
 }
 @font-face {
-    font-family:HLT-bauserif;
-    src: url("/assets/font/HLT-bauserif.ttf");
+    font-family:HLT bauserif;
+    src: url("/assets/font/HLT\ bauserif.ttf");
 }
 @font-face {
-    font-family: Bauhaus-Medium;
-    src: url("/assets/font/Bauhaus-Light-Regular.ttf");
+    font-family: Bauhaus-medium;
+    src: url("/assets/font/bauhaus-medium.ttf");
 }
 @font-face {
-    font-family: Bauhaus-Light-Regular;
-    src: url("/assets/font/Bauhaus-Light-Regular.ttf");
+    font-family: bauhaus-light;
+    src: url("/assets/font/VL\ BAUHAUSSTD\ LIGHT.OTF");
 }
 @font-face {
-    font-family:Roboto-Slab-Regular;
-    src: url("/assets/font/Roboto-Slab-Regular.ttf");
+    font-family:Roboto;
+    src: url("/assets/font/Roboto-Black.ttf");
 }
 /* ========Header======= */
 
@@ -117,7 +117,7 @@ main{
     box-sizing: border-box;
     border-radius: 5px;
     display: inline-block;
-    font-family: Bauhaus-Medium;
+    font-family:Bauhaus-medium;
     font-style: normal;
     font-weight: normal;
     font-size: 20px;
@@ -232,7 +232,7 @@ main{
     width: 385px;
     height: 114px; 
     color: black;
-    font-family: Bauhaus-Medium;
+    font-family: Bauhaus-medium;
     font-style: normal;
     font-weight: normal ;
     font-size: 45px;
@@ -259,7 +259,7 @@ main{
     width: 197px;
     height: 23.82px;
 
-    font-family: Bauhaus-Medium;
+    font-family:Bauhaus-medium;
     font-style: normal;
     font-weight: normal;
     font-size: 19px;
@@ -284,7 +284,7 @@ main{
 .text-blog-3 .note-blog-3{
     width: 573px;
     height: 50px;
-    font-family: HLT-bauserif;
+    font-family: HLT bauserif;
     font-style: normal;
     font-weight: normal;
     font-size: 24px;
@@ -294,7 +294,7 @@ main{
 .text-blog-3 .h2-blog-03{
     width: 450px;
     height:168px;
-    font-family: HLT-bauserif;
+    font-family: HLT bauserif;
     font-style: normal;
     font-weight: normal;
     font-size: 60px;
@@ -305,7 +305,7 @@ main{
     width: 352px;
     height: 110px;
 
-    font-family: Bauhaus-Medium;
+    font-family: Bauhaus-medium;
     font-style: normal;
     font-weight: normal;
     font-size: 20px;
@@ -319,7 +319,7 @@ main{
     border: 3px solid #000000;
     box-sizing: border-box;
     border-radius: 5px;
-    font-family: Bauhaus-Medium;
+    font-family: Bauhaus-medium;
     font-style: normal;
     font-weight: normal;
     font-size: 20px;
@@ -332,27 +332,29 @@ main{
 }
 /* ====================New===================== */
 .new-container{
-    margin: 20px 170px 100px 165px;
+    margin: 20px 150px 130px 185px;
 }
 .new-container .h1-new{
     width: 400px;
     height: 75px;
+    margin-left: 1px;
     font-style: normal;
     font-weight: normal;
     font-size: 48px;
-    line-height: 58px;
+    line-height: 60px;
     color: #000000;
 }
 .prev-new, .next-new{
     position: absolute;
     cursor: pointer;
+    margin-left: 100rem;
     width: 50px;
     height: 50px;
+    margin-top: -70px;
+    margin-right: 10rem;
+    margin-left: 66rem;
     text-align: center;
-    line-height: 58px;
-    margin-top:-70px;
-    margin-right:10.50pc;
-    margin-left: 67pc;
+    line-height: 60px;
     color: white;
     font-weight: bold;
     font-size: 30px;
@@ -387,7 +389,7 @@ main{
 .text-new .h2-new{
     width: 370px;
     height: 60px;
-    font-family: Bauhaus-Medium;
+    font-family: Bauhaus-medium;
     font-style: normal;
     font-weight: normal;
     font-size: 30px;
@@ -395,11 +397,10 @@ main{
     color: #61A952;
 }
 .text-new .p-content-new{
-    width: 365px;
-    height: 60px;
-    font-family: Bauhaus-Light-Regular;
-    font-style: normal;
-    font-weight: 300;
+    width: 375px;
+    height: 90px;
+    font-family: bauhaus-light;
+    font-weight: 1000px;
     font-size: 16px;
     line-height: 17px;
 }
@@ -431,35 +432,19 @@ main{
 }
 /* ========================blog==================== */
 .blog-container{
-    margin: 20px 170px 100px 165px;
+    margin: 20px 150px 130px 185px;
 }
 .blog-container .h1-blog{
     width: 400px;
     height: 75px;
+    margin-left: 10px;
     font-style: normal;
     font-weight: normal;
     font-size: 48px;
     line-height: 58px;
     color: #000000;
 }
-.prev-new, .next-new{
-    position: absolute;
-    cursor: pointer;
-    width: 50px;
-    height: 50px;
-    text-align: center;
-    line-height: 58px;
-    margin-top:-70px;
-    margin-right:10.50pc;
-    margin-left: 67pc;
-    color: white;
-    font-weight: bold;
-    font-size: 30px;
-    transition: 0.6s ease;
-    border-radius: 50%;
-    background: rgba(196, 196, 196, 0.48);
-    user-select: none;
-} 
+
 .prev-blog, .next-blog{
     position: absolute;
     cursor: pointer;
@@ -467,9 +452,9 @@ main{
     height: 50px;
     text-align: center;
     line-height: 58px;
-    margin-top:-70px;
-    margin-right:10.50pc;
-    margin-left: 67pc;
+    margin-top: -70px;
+    margin-right: 10rem;
+    margin-left: 66rem;
     color: white;
     font-weight: bold;
     font-size: 30px;
@@ -504,7 +489,7 @@ main{
 .text-blog .h2-blog{
     width: 370px;
     height: 60px;
-    font-family: Bauhaus-Medium;
+    font-family: Bauhaus-medium;
     font-style: normal;
     font-weight: normal;
     font-size: 30px;
@@ -514,7 +499,7 @@ main{
 .text-blog .p-content-blog{
     width: 365px;
     height: 60px;
-    font-family: Bauhaus-Light-Regular;
+    font-family: bauhaus-light;
     font-style: normal;
     font-weight: 300;
     font-size: 16px;
@@ -589,14 +574,14 @@ hr{
     bottom: 2px;
 }
 .p1{
-    font-family:Roboto-Slab-Regular;
+    font-family:Roboto;
     padding-left: 35px;
     padding-bottom: 7px;
     font-size: 12px;
     color: black;
 }
 .p2{
-    font-family:Roboto-Slab-Regular;
+    font-family:Roboto;
     margin-left: 42pc;
     font-size: 12px;
     color: black;
