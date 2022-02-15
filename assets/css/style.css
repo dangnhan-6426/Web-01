@@ -198,7 +198,7 @@ main{
 
 /* =============Blog============== */
 .Post-layout{
-    margin: 0px 0px 0px 180px ;
+    margin-left: 180px;
     display: grid;
     grid-gap:35px;
     grid-template-columns: 3fr 2fr 1.4fr;
