@@ -23,7 +23,6 @@ html{
     src: url("/assets/font/Roboto-Black.ttf");
 }
 /* ========Header======= */
-
 header{
     display: inline-flex;
     justify-content: space-between;
@@ -63,7 +62,7 @@ header{
     text-decoration: none;
     font-size:26px;
     color: black;
-    padding: 20px 20px;
+    padding: 25px 20px;
 }
 .menu-nav-ul li a:hover{
     color: white;
@@ -200,9 +199,9 @@ main{
 .Post-layout{
     margin-left: 180px;
     display: grid;
-    grid-gap:35px;
-    grid-template-columns: 3fr 2fr 1.4fr;
-    grid-template-rows: 400px 250px 200px;
+    grid-gap:80px;
+    grid-template-columns: 7fr 5fr 2fr;
+    grid-template-rows: 477px 350px 180px;
 }
 .item3 {
     grid-column: 2 / span 2;
@@ -220,7 +219,7 @@ main{
 }
 .blog-02 img{
     
-    width: 100%;
+    width: 98.5%;
     height: auto;
 }
 .text-blog-2{
@@ -272,8 +271,8 @@ main{
 .blog-03{
     position: relative;
 }
-.blog-03{
-    width: 100%;
+.blog-03 img{
+    width: 82%;
     height: auto;
 }
 .text-blog-3{
@@ -337,7 +336,8 @@ main{
 .new-container .h1-new{
     width: 400px;
     height: 75px;
-    margin-left: 1px;
+    margin-left: 2px;
+    margin-bottom: 10px;
     font-style: normal;
     font-weight: normal;
     font-size: 48px;
@@ -347,14 +347,13 @@ main{
 .prev-new, .next-new{
     position: absolute;
     cursor: pointer;
-    margin-left: 100rem;
     width: 50px;
     height: 50px;
     margin-top: -70px;
-    margin-right: 10rem;
-    margin-left: 66rem;
-    text-align: center;
-    line-height: 60px;
+    margin-right: 9.9rem;
+    margin-left: 90rem;
+    padding: 0px 12px 0px 10px;
+    line-height: 55px;
     color: white;
     font-weight: bold;
     font-size: 30px;
@@ -376,15 +375,18 @@ main{
 }
 .image{
     height: 360px;
-    margin-bottom:20px ;
+    margin:20px 5px 20px -20px ;
+    padding: 0 30px;
 }
 .image img{
     width: 100%;
-    height: auto;
+    height: 440px;
     object-fit: cover;
 }
 .text-new{
-    margin-top: 35px;
+    margin-top: 10pc;
+    margin-left: 15px;
+    margin-bottom: 20px;
 }
 .text-new .h2-new{
     width: 370px;
@@ -410,7 +412,7 @@ main{
 .slick-dots{
     list-style: none;
     position: absolute;
-    margin: 50px 0px 0px 510px;
+    margin-left: 42.5pc;
     transform: translateX(-50%,0);
     display: flex;
     align-items: center;
@@ -437,11 +439,12 @@ main{
 .blog-container .h1-blog{
     width: 400px;
     height: 75px;
-    margin-left: 10px;
+    margin-left: 2px;
+    margin-bottom: 10px;
     font-style: normal;
     font-weight: normal;
     font-size: 48px;
-    line-height: 58px;
+    line-height: 60px;
     color: #000000;
 }
 
@@ -450,11 +453,11 @@ main{
     cursor: pointer;
     width: 50px;
     height: 50px;
-    text-align: center;
-    line-height: 58px;
     margin-top: -70px;
-    margin-right: 10rem;
-    margin-left: 66rem;
+    margin-right: 9.9rem;
+    margin-left: 90rem;
+    padding: 0px 12px 0px 10px;
+    line-height: 55px;
     color: white;
     font-weight: bold;
     font-size: 30px;
@@ -476,15 +479,18 @@ main{
 }
 .blog-image{
     height: 360px;
-    margin-bottom:20px ;
+    margin:20px 5px 20px -20px ;
+    padding: 0 30px;
 }
 .blog-image img{
     width: 100%;
-    height: auto;
+    height: 440px;
     object-fit: cover;
 }
 .text-blog{
-    margin-top: 35px;
+    margin-top: 10pc;
+    margin-left: 15px;
+    margin-bottom: 50px;
 }
 .text-blog .h2-blog{
     width: 370px;
@@ -497,28 +503,29 @@ main{
     color: #61A952;
 }
 .text-blog .p-content-blog{
-    width: 365px;
+    width: 375px;
     height: 60px;
     font-family: bauhaus-light;
     font-style: normal;
-    font-weight: 300;
+    font-weight: 1000px;
     font-size: 16px;
     line-height: 17px;
 }
 /* ==============================Footer========================== */
 hr{
-    margin: 50px 0px 5px 190px;
-    width: 1160px;
+    margin:0px 12.5pc ;
+    width: 80%;
     height: 8px;
-    background: #C4C4C4;
+    background: #c2bcbc;
 }
 .content-logo{
     display: inline-block;
-    margin:0px 10px 0px 220px;
+    margin-left: 25pc;
 }
 .content-logo img{
-    width: 185px;
+    width: 195px;
     height: auto;
+    padding: 0px 40px 0px 20px;
 }
 .content-footer{
     position: relative;
@@ -531,15 +538,16 @@ hr{
 .logo-web{
     display: inline-flex;
     gap:0 15px;
-    margin-left: 42.5pc;
+    margin-left: 54.6pc;
 }
 .logo-web img{
     width: 100%;
     height: auto;
     margin: 70px 0 -15px 0;
 }
+
 .menu-footer-nav-ul{
-    margin-left: 33pc;
+    margin-left: 48pc;
 }
 .menu-footer-nav-ul li{
     display: inline-flex;
@@ -547,13 +555,13 @@ hr{
 }
 .menu-footer-nav-ul li a{
     text-decoration: none;
-    font-size:26px;
+    font-size:20px;
     color: black;
-    padding: 20px 7px;
+    padding: 20px 10px;
 }
 .icon-footer-nav{
-    margin-left: 40pc;
-    margin-bottom:50px;
+    margin-left: 51pc;
+    margin-bottom:30px;
 }
 .icon-footer-nav-ul li{
     display: inline-flex;
@@ -562,29 +570,36 @@ hr{
     text-decoration: none;
     font-size:35px;
     color: black;
-    padding: 1px 13px;
+    padding: 5px 20px;
 }
 .methor{
-    display: inline-flex;
-    margin-left:37pc;
+    display: flex;
+    margin-left:50pc;
+    margin-bottom: 5px;
 }
-.methor img{    
+.icon-methor{    
     width: 15pt;
     height: 15pt;
-    bottom: 2px;
+    margin-top:-4px;
+}
+.test-methor{
+    display: block;
 }
 .p1{
     font-family:Roboto;
-    padding-left: 35px;
+    padding-left: 32px;
     padding-bottom: 7px;
     font-size: 12px;
     color: black;
 }
+
+
 .p2{
+    margin-left:58px ;
     font-family:Roboto;
-    margin-left: 42pc;
     font-size: 12px;
     color: black;
 }
+
 
 
