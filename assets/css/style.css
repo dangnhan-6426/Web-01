@@ -7,15 +7,15 @@
 }
 @font-face {
     font-family:HLT bauserif;
-    src: url("../font/bauserif.ttf");
+    src: url("font/HLT bauserif.ttf");
 }
 @font-face {
     font-family:Bauhaus-medium;
-    src: url("../font/bauhaus-medium.ttf");
+    src: url("font/bauhaus-medium.ttf");
 }
 @font-face {
-    font-family: Bauhaus-light;
-    src: url("../font/VL\ BAUHAUSSTD\ LIGHT.OTF");
+    font-family:Bauhaus-light;
+    src: url("font/VL BAUHAUSSTD LIGHT.OTF");
 }
 /* ========Header======= */
 header{
