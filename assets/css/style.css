@@ -2,25 +2,20 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
-html{
-    font-family:HLT bauserif;
-}
-@font-face {
-    font-family:HLT bauserif;
-    src: url("/assets/font/HLT\ bauserif.ttf");
-}
-@font-face {
+    font-family: HLT bauserif;
     font-family: Bauhaus-medium;
-    src: url("/assets/font/bauhaus-medium.ttf");
 }
 @font-face {
-    font-family: bauhaus-light;
-    src: url("/assets/font/VL\ BAUHAUSSTD\ LIGHT.OTF");
+    font-family:HLT bauserif;
+    src: url("../font/bauserif.ttf");
 }
 @font-face {
-    font-family:Roboto;
-    src: url("/assets/font/Roboto-Black.ttf");
+    font-family:Bauhaus-medium;
+    src: url("../font/bauhaus-medium.ttf");
+}
+@font-face {
+    font-family: Bauhaus-light;
+    src: url("../font/VL\ BAUHAUSSTD\ LIGHT.OTF");
 }
 /* ========Header======= */
 header{
@@ -58,8 +53,9 @@ header{
     display: inline-flex;
     list-style: none;
 }
-.menu-nav-ul li a{
+.menu-nav-ul li a {
     text-decoration: none;
+    font-family:  HLT bauserif;
     font-size:26px;
     color: black;
     padding: 25px 20px;
@@ -97,12 +93,14 @@ main{
 }
 .text .p-1{ 
     color: white;
+    font-family:  HLT bauserif;
     font-style: normal;
     font-weight: normal ;
     font-size: 40px;
     line-height: 48px;
     padding-bottom: 70px;
 }.text .p-2{
+    font-family:  HLT bauserif;
     font-style: normal;
     font-weight: normal;
     font-size: 22px;
@@ -555,6 +553,7 @@ hr{
 }
 .menu-footer-nav-ul li a{
     text-decoration: none;
+    font-family: HLT bauserif;
     font-size:20px;
     color: black;
     padding: 20px 10px;
@@ -586,7 +585,7 @@ hr{
     display: block;
 }
 .p1{
-    font-family:Roboto;
+    font-family:Roboto, sans-serif;
     padding-left: 32px;
     padding-bottom: 7px;
     font-size: 12px;
@@ -596,7 +595,7 @@ hr{
 
 .p2{
     margin-left:58px ;
-    font-family:Roboto;
+    font-family:Roboto, sans-serif;
     font-size: 12px;
     color: black;
 }
